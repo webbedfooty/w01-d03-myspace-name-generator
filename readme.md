@@ -37,6 +37,8 @@ actually run your "tests", complete with whatever output you expect. Don't worry
 about if your methods do too many things (they will) -- we'll only use this method
 for a day or so.
 
+You'll run your tests by typing `ruby tests/name_generator_test.rb`.
+
 ## How to do it
 
 I'll suggest that you write your tests before you write your code. But don't write
