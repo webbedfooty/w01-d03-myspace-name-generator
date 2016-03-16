@@ -1,5 +1,8 @@
 ## MySpace Name Generator
 
+[For reference, the work we did
+today](https://github.com/star-city-code-school/fenrir/tree/master/lesson_plans/week_01/d03-samples)
+
 Write a method that, when provided with a string, converts that string into a
 *MySpace name*. Here's what this looks like:
 
