@@ -7,7 +7,7 @@
 #   Alternate caps and lowercase
 #   for example: Andrew Ek should become xX_AnDrEwEk_Xx
 
-myspace_name = "Andew  EEK  "
+myspace_name = "Andew!13  EEK  "
 
 #require 'pry'
 #def name_generator(myspace_name)
@@ -25,11 +25,16 @@ first_scrub = first_scrub.upcase
 #puts first_scrub
 generator = Array.new
 
-while y != nc-1
-generator[y] = first_scrub.byteslice(y)
-#generator[y] = generator[y] #.downcase
-y = y + 1
-generator[y] = first_scrub.byteslice(y)
-y = y + 1
-end
-puts generator
+
+
+
+def alternate_capitalization(first_scrub)
+  generator = ""
+  (0...nc).each do |i|
+    if i % 2 ==0
+      generator << first_scrub[i].upcase
+    else
+      generator << first_scrub[i].downcase
+    end
+  end
+  puts generator
