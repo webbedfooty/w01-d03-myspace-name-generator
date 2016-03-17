@@ -20,17 +20,19 @@ first_scrub = first_scrub.sub(/[:.,?!\'\"]/, '')
 x = x + 1
 end
 #puts first_scrub
-first_scrub = first_scrub.upcase
+first_scrub = first_scrub.downcase
 puts first_scrub
 
-def alternate_capitalization(first_scrub)
-  alt_cap.arr = ""
-  (0...nc).each do |i|
-    if i % 2 == 0
-      alt_cap << first_scrub[i].upcase
-    else
-      alt_cap << first_scrub[i].downcase
-    end
-    puts alt_cap
+#def alternate_capitalization(first_scrub)
+
+alt_cap.arr = ""
+(0...nc).each do |i|
+  if i % 2 == 0
+    alt_cap << first_scrub[i].upcase
+  else
+    alt_cap << first_scrub[i].downcase
   end
-end
+puts alt_cap
+  #end
+#end
+puts alt_cap
