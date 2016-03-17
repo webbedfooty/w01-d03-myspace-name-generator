@@ -21,6 +21,7 @@ x = x + 1
 end
 #puts first_scrub
 first_scrub = first_scrub.upcase
+puts first_scrub
 
 def alternate_capitalization(first_scrub)
   alt_cap.arr = ""
